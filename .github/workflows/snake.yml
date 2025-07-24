@@ -1,27 +1,30 @@
-name: Update Contribution Snake
-
+name: Generate Snake
 on:
   schedule:
     - cron: "0 0 * * *"
   workflow_dispatch:
-
+  
 jobs:
-  generate-snake:
+  generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       
       - name: Generate Snake
-        uses: Platane/snk@v2
+        uses: Platane/snk@v3
+        id: snake
         with:
-          github_user_name: Esquema  # Tu usuario exacto
-          svg_out_path: assets/github-snake.svg
-          gif_out_path: assets/github-snake.gif  # Opcional
+          github_user_name: Esquema  # ¡Tu usuario exacto!
+          
+      - name: Save SVG
+        run: |
+          mkdir -p assets
+          echo "${{ steps.snake.outputs.snake_svg }}" > assets/github-snake.svg
           
       - name: Push Changes
         run: |
           git config --global user.name "Esquema"
           git config --global user.email "tu-email@ejemplo.com"
-          git add assets/
+          git add assets/github-snake.svg
           git commit -m "Update snake [skip ci]"
           git push
