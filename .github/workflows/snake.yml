@@ -17,6 +17,9 @@ jobs:
         with:
           github_user_name: Esquema
           outputs: assets/github-snake.svg
+          snake_color: "#00ffcc"
+          background_color: "#0d1117"
+          color_dots: "#6aff00,#ffcc00,#ff0077,#00ccff,#ffffff"
 
       - name: Commit and Push SVG
         run: |
