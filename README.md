@@ -42,7 +42,7 @@
 
 | 🐍 My contribution |
 | ------------------------------------------|
-| ![Snake animation](https://github.com/Esquema/Esquema/blob/output/github-contribution-grid-snake.svg) | 
+| <img src="https://github.com/Esquema/Esquema/blob/output/dist/github-snake.svg" alt="Snake animation" /> | 
 
 <div align="Center">
 
