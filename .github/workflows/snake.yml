@@ -14,7 +14,7 @@ jobs:
         uses: Platane/snk@v3
         id: snake
         with:
-          github_user_name: Esquema  # ¡Tu usuario exacto!
+          github_user_name: Esquema
           
       - name: Save SVG
         run: |
@@ -26,5 +26,5 @@ jobs:
           git config --global user.name "Esquema"
           git config --global user.email "esnotfound404@gmail.com"
           git add assets/github-snake.svg
-          git commit -m "Update snake [skip ci]"
+          git commit -m "Update snake [skip ci]" || echo "No changes to commit"
           git push
