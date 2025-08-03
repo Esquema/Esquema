@@ -4,7 +4,7 @@
 <div align="center">
 
 <a href="https://github.com/Esquema">
-<img src="https://gifdb.com/images/high/raiden-shogun-discord-banner-09v65uf3cumi417w.webp" alt="Anime Banner" style="border-radius: 10px; border: 2px solid #bd93f9;"/>
+<img src="https://gifdb.com/images/high/banner-498-x-199-gif-f9sx2jfw7tpro1j7.webp" alt="Anime Banner" width="600" style="border-radius: 10px; border: 2px solid #bd93f9;"/>
 </a>
 
 [![GitHub Followers](https://img.shields.io/github/followers/Esquema?label=Followers&color=ff79c6&style=flat-square&logo=github&logoColor=white)](https://github.com/Esquema)
